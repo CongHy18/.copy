@@ -1,0 +1,81 @@
+/* ABOUT */
+.wrap-aboutus { position: relative; z-index: 1; } 
+.aboutus-image { z-index: 1; } 
+.title__aboutus { font-size: 30px; color: var(--color-title); text-transform: capitalize; } 
+.name__aboutus { font-size: 30px; color: var(--color-title); text-transform: capitalize; } 
+.desc__aboutus { -webkit-line-clamp: 6; font-size: 15px; line-height: 30px; margin-top: 15px; } 
+
+/* VIDEO */
+.wrap__video { position: relative; z-index: 11; } 
+.play { left: 0; right: 0; bottom: 0; margin: auto; display: flex; flex-direction: column; justify-content: center; height: 100%; width: 50%; align-items: center; /* padding: 15px; */ } 
+.play img { padding: 10px; } 
+
+/* ALBUM */
+.wrap__album { position: relative; z-index: 1; } 
+.main__album  { display: grid; gap: 20px; grid-template-columns: repeat(4, minmax(0, 1fr)); } 
+.items__album:nth-child(1) { } 
+
+
+/* CRITICAL */
+.criteria__name{ font-family: var(--font-bold); font-size: 15px; color: var(--color-title);margin-bottom: 10px;} 
+.criteria__name .text-split { -webkit-line-clamp: 1; } 
+.criteria__desc { color: var(--color-title); font-family: var(--font-regular); font-size: 13px; -webkit-line-clamp: 2; } 
+.criteria .criteria__image { transition: all linear 0.3s; width: 95px;height: 95px;background: var(--color-main);border-radius: 50%; display: flex; justify-content: center;align-items: center; } 
+.criteria:hover .criteria__image { transform: rotateY(180deg); transition: all linear 0.3s; } 
+.criteria__info{width: calc(100% - 110px);}
+
+
+/* NEWS */
+.news__info{padding: 10px;}
+.news__info .news__name a { font-size: 16px; color: var(--color-title); -webkit-line-clamp: 2; } 
+.news__info .news__desc { font-size: 14px; color: var(--color-title); line-height: 25px; margin-top: 10px; } 
+
+/* FORM */
+.wrap__form {  } 
+.title__form{text-align: center;font-family: var(--font-bold);text-transform: uppercase; color: var(--color-title);}
+.validation__newsletter ::placeholder { color: #000 !important; font-family: var(--font-regular); font-size: 14px; } 
+.newsletter__input { position: relative; padding: 0 5px !important; } 
+.newsletter__input input { padding: 0.35rem 15px; height: 45px; font-size: 14px; color: #333; background: none; border-radius: 0; border: 1px solid #000; } 
+.col__input { margin-bottom: 10px; } 
+.col__content { padding: 0 5px !important; } 
+.col__content textarea { padding: 0.35rem 15px; height: 90px; background: none; border-radius: 0; border: 1px solid #000; } 
+.newsletter__button { background: #fff; border: none !important; border-radius: 0 !important; margin: 20px auto 0 auto; width: 150px;height: 50px;line-height: 50px; } 
+.newsletter__button input[type="submit"] { color: var(--color-main) !important; font-family: var(--font-regular); font-size: 15px; background: none; border: none; border-color: unset; } 
+.newsletter__button:hover { background: var(--color-main); } 
+.newsletter__button:hover input[type="submit"] { color: #fff !important; } 
+.col__submit { padding: 0 5px !important; margin: auto; text-align: center; } 
+
+/* FOOTER */
+.footer__article { background: url(../images/set/bg-ft.png) no-repeat; background-size: 100% 100%; } 
+.footer__article .wrap-content { padding: 35px 15px; } 
+.footer__name { text-transform: uppercase; font-size: 18px; margin-bottom: 1rem;  } 
+.footer__title { text-transform: uppercase; font-size: 18px; margin-bottom: 1rem; } 
+.footer__ul { list-style: none; padding: 0px; margin: 0px; } 
+.footer__ul li { margin-bottom: 10px; } 
+.footer__ul li:last-child { margin-bottom: 0px; } 
+.footer__ul li a { color: #fff; } 
+.footer__ul li a:hover { text-decoration: underline; } 
+.footer__powered { color: #ffffff; background-color: var(--color-main); } 
+.footer__powered .wrap-content { padding-top: 15px; padding-bottom: 15px; font-family: var(--font-regular); font-size: 14px; } 
+.footer__statistic { text-align: right; } 
+.footer__statistic span { padding-right: 10px; } 
+.footer__statistic span:last-child { padding-right: 0px; } 
+.line__bottom { position: relative; padding-bottom: 10px; } 
+.line__bottom::after { position: absolute; border-bottom: 2px solid #fff; content: ""; left: 0; bottom: 0; width: 35px; } 
+.social__footer li{width: 40px;height: 40px;border-radius: 50%;}
+
+
+/* CSS CUSTOM */
+::-webkit-scrollbar { width: 3px; } 
+::-webkit-scrollbar-track { background: #ccc; } 
+::-webkit-scrollbar-thumb { background: var(--color-main); } 
+::-webkit-scrollbar-thumb:hover { background: var(--color-hover); } 
+.product .i_left { position: absolute; height: 0; border-radius: 0 50px; width: 2px; left: 0; top: 0; background: -webkit-linear-gradient(bottom, red, orange, yellow, green, blue, indigo, violet); background: -o-linear-gradient(bottom, red, orange, yellow, green, blue, indigo, violet); background: -webkit-gradient(linear, left bottom, left top, from(red), color-stop(orange), color-stop(yellow), color-stop(green), color-stop(blue), color-stop(indigo), to(violet)); background: linear-gradient(to top, red, orange, yellow, green, blue, indigo, violet); -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease } 
+.product .i_right { position: absolute; height: 0; width: 2px; right: 0; bottom: 0; background: -webkit-linear-gradient(top, red, orange, yellow, green, blue, indigo, violet); background: -o-linear-gradient(top, red, orange, yellow, green, blue, indigo, violet); background: -webkit-gradient(linear, left top, left bottom, from(red), color-stop(orange), color-stop(yellow), color-stop(green), color-stop(blue), color-stop(indigo), to(violet)); background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet); -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease } 
+.product .i_top { position: absolute; height: 2px; width: 0; right: 0; top: 0; background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); background: -webkit-gradient(linear, left top, right top, from(red), color-stop(orange), color-stop(yellow), color-stop(green), color-stop(blue), color-stop(indigo), to(violet)); background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease } 
+.product .i_bottom { position: absolute; height: 2px; width: 0; left: 0; bottom: 0; background: -webkit-linear-gradient(right, red, orange, yellow, green, blue, indigo, violet); background: -o-linear-gradient(right, red, orange, yellow, green, blue, indigo, violet); background: -webkit-gradient(linear, right top, left top, from(red), color-stop(orange), color-stop(yellow), color-stop(green), color-stop(blue), color-stop(indigo), to(violet)); background: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet); -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease } 
+.product:hover .i_left { height: 100%; bottom: 0; top: inherit } 
+.product:hover .i_top { width: 100%; left: 0 } 
+.product:hover .i_right { height: 100%; top: 0; bottom: inherit } 
+.product:hover .i_bottom { width: 100%; right: 0; left: inherit } 
+.color__hover:hover{color: var(--color-hover);}
